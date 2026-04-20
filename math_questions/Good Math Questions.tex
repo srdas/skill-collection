@@ -1,0 +1,126 @@
+\documentclass[12pt]{article} 
+\usepackage{graphicx} 
+\usepackage{amsmath} 
+\usepackage{amssymb} 
+\usepackage{url}
+\usepackage{color}
+
+\DeclareMathOperator*{\argmax}{arg\,max}
+
+\renewcommand{\baselinestretch}{1} 
+\newcommand{\eps}{\varepsilon}
+
+%\textwidth = 6.5 in 
+%\textheight = 9 in 
+%\oddsidemargin = 0.0 in 
+%\evensidemargin = 0.0 in 
+%\topmargin = 0.0 in 
+%\headheight = 0.0 in 
+%\headsep = 0.0 in 
+%\parskip = 0.1in 
+%\parindent = 0.0in 
+
+
+
+\begin{document}
+
+\begin{center}
+{\LARGE What Are Good Math Questions?}
+\end{center}
+
+Nothing matters more to teaching math than the questions a professor writes for homework and, especially, exams. These define the true expectations a professor has for their students, far more than the notes or the way classes are taught. So before a professor writes questions, they should ask themselves ``What do I want my students to be able to do?" and ``What do I value in mathematics that I want my students to also value?"
+
+Let me start with what I think has little value: assigning questions that require a student to mimic an algorithm they've already seen or, worse, to spit out memorized formulas. Better questions, in my view, ask students to do things like (1) Determine which algorithm they should use since it's not immediately clear, or determine how to sequence a few previously seemingly unrelated algorithms to solve a new problem. (2) Apply the concepts they've seen to new problems they have not seen. (3) Show they understand a concept from different viewpoints, like algebraic, geometric, physical, and numerical perspectives. (4) Alter the proof for a formula to determine an altered new formula for a slightly different situation.  I prefer problems that are not that computationally complex, but are instead conceptually challenging, where if you see it the right way, the problem falls apart pretty quickly. I'm not looking for tricks, just ways for a student to show a depth of understanding. Problems that take too long to calculate are best avoided.
+
+The ability to mimic algorithms or spit out formulas becomes less and less useful as time progresses because computers can do these mechanical activities with ease. The skills I value correspond, at least in my view, to creativity, deeper understanding, and the ability to see connections and solutions that are not immediately obvious, but are beautiful once you see them. These are generally harder questions for students because they require more from them.
+
+Here are some examples of questions I have created and like for exams, along with the answers to the questions, and why I like the questions. I note that none of these questions are similar to homework questions, and I don't give practice exams:
+
+\begin{enumerate}
+
+\item Question (from early in calculus): Let's say that $f(x)$ is differentiable at $x=3.$ Is the statement $f^{\prime }(3)=\lim\limits_{h\rightarrow 0}\frac{%
+f(3+5h)-f(3-2h)}{7h}$ true or false? Why?
+
+\underline{Answer:} True. Since $f'(3)$ exists, if you blow up the graph of $f(x)$ near $x=3$, you have what looks more and more like a straight line. The slope of that line is $f'(3)$. It's also $\frac{%
+f(3+5h)-f(3-2h)}{7h},$ so these are equal.
+
+\underline{Why do I like this problem?:}  This question is unlike any homework problem, but if you read the notes and understood them, you are able to understand how the algebraic definition of the derivative (i.e., the limit definition) and the geometric definition (i.e., slope of the tangent line) are equivalent. You need both perspectives to really get the answer to this question, meaning you've truly mastered the central concept of the derivative. Some students might use an example function $f$ and work that through. That could work, but it's hard and it's not general, so significant partial credit might be appropriate in that case if they do it right. There's less partial credit if they assume $f$ is the equation of a line.
+
+
+\item Question (from when they've just learned about dot and cross products and quadric surfaces in calculus): Consider the vectors $\mathbf{v} = v_1\mathbf{i} + v_2\mathbf{j} +v_3\mathbf{k}$ and  $\mathbf{w} = 4\mathbf{i} + 2\mathbf{j} +3\mathbf{k}$. Both parts of this question involve $(v_1, v_2, v_3)$ space, which is the 3-D space where the three orthogonal axes are $v_1, v_2$, and $v_3$ instead of $x, y$, and $z$.  For both questions, algebraic equations are worth no points although they may (or may not) help you determine your answers.
+	\begin{enumerate}
+		\item Determine the type of geometric shape (e.g., a sphere, a line, a point, etc.) that is formed in $(v_1, v_2, v_3)$ space by the equation $\mathbf{v\cdot w}=7$.
+		\item Determine the type of geometric shape that is formed in $(v_1, v_2, v_3)$ space by the equation $||\mathbf{v\times w}||=7$.
+	\end{enumerate}
+
+\underline{Answer:} For part (a): $4v_1 + 2v_2 + 3v_3 =7$ is the equation of a plane in $(v_1, v_2, v_3)$ space. For part (b): Since $||\mathbf{v\times w}|| = ||{\bf w}||*||{\bf v}||* \sin(\theta)$, we have the set of points in $(v_1, v_2, v_3)$ space that are a distance of $\frac{7}{||{\bf w}||}$ away from the axis going through the origin in the ${\bf w}$ direction. That describes a cylinder.
+
+\underline{Why do I like this problem?:}  Part (a) is easy, so students who know even a little should be able to answer it correctly. Part (b) is much harder and more interesting, requiring a true geometric understanding of trigonometry, along with understanding what the magnitude of a vector means. Further, just plugging in numbers will give you a mess (unless you are clever and replace ${\bf w}$ with something more simple like ${\bf i}$). 
+
+
+\item Question (from when they've just learned about Stokes' Theorem in calculus):  Either determine a vector field ${\bf F}$ that satisfies all the following conditions or prove that no vector field ${\bf F}$ can satisfy all the conditions:
+		\begin{enumerate}
+		
+		\item $\int\limits_{C_1} {\bf F \cdot} d{\bf r} =1$ where $C_1$ is the line segment starting at the origin and ending at the point $(1,0)$. 
+		
+		\item $\int\limits_{C_2} {\bf F \cdot} d{\bf r} =2$ where $C_2$ is the line segment starting at the origin and ending at the point $(0,1)$. 
+		
+		\item {\bf F} is radial, meaning it always points directly away from or towards the origin. (So, at any $(x,y)$, {\bf F} points in the same or opposite direction as $x{\bf i} + y{\bf j}$.)
+		
+		\item {\bf F} is conservative.
+		
+		\end{enumerate}
+
+\underline{Answer:} Since {\bf F} is conservative, any circulation with {\bf F} is zero. So consider a circulation path that starts at (0,0), follows $C_1$, then follows the circle $x^2+y^2=1$ counter-clockwise from (1,0) to (0,1) and then follows $C_2$ (but in the opposite direction) back to (0,0). $\int_{C} {\bf F \cdot} d{\bf r}$ along the circle must be zero because {\bf F} and $d{\bf r}$ are orthogonal due to {\bf F} being radial. Therefore, the circulation must be $1+0-2 = -1$ on one hand, but it must be 0 since {\bf F} is conservative. This contradiction means that no vector field ${\bf F}$ can satisfy all the conditions. 
+
+\underline{Why do I like this problem?:}  It is unfortunate that students have a really hard time with this problem, but once you see the answer, it is beautiful. It also requires the student to be innovative and put together a number of ideas regarding flow integrals, circulations, and conservative fields. It definitely requires some imagination to put in the path along the circle, and that's where the students had particular difficulty. 
+
+
+\item Question (from a Junior/Senior level optimization course): Let's say that I have a generic quadratic function $f({\bf x}) = a + {\bf b}^T{\bf x} + {\bf x}^T{\bf C}{\bf x},$ where ${\bf x}$ and ${\bf b}$ are $n$-vectors, $a$ is a scalar, and ${\bf C}$ is an $n \times n$ matrix with components $C_{ij}$, where $i$ and $j \in {1,2,...,n}$.  There is a claim on Reddit that this can be re-expressed in the form $f({\bf x}) = a + {\bf b}^T{\bf x} + {\bf x}^T{\bf S}{\bf x},$ where ${\bf S}$ is a symmetric matrix.  Is the claim true? If it's not, give me an example of a ${\bf C}$ matrix where $f({\bf x})$ cannot be re-expressed.  If it is true, define $S_{ij}$, the components of ${\bf S}$.
+
+\underline{Answer:} It is true, if you let $S_{ij} = \frac{C_{ij} + C_{ji}}{2}$. 
+
+\underline{Why do I like this problem?:}  At first it seems like it must be false, but when you realize that $C_{ij}$ and $C_{ji}$ both correspond to the $x_ix_j$ term, it becomes clear what you can do. I like that at first it's not clear, but just a bit of thought shows that this problem isn't that hard. Experimenting with the $2 \times 2$ matrix case provides clarity, and I like that idea that experiments can help create insight. I also like that the result is useful. We show in class the power of ${\bf S}$ being symmetric, and it makes sense to pooh-pooh that because most matrices are not symmetric, but this problem shows that in this context all matrices might as well be symmetric!
+
+
+\item Question (from a Math Finance course for a mix of upper division Math and Computer Science graduates and Engineering and Finance graduate students): Emerson has a high-paying/high-pressure job at the firm Stock Data Analytics.  SDA asked him to determine the annual mean, $\mu$, and the annual volatility, $\sigma$, for the stock price, $S$, of a company that manufactures candy cigarettes.
+
+Emerson download the daily stock prices, $S_i$, for the end of 504 consecutive trading days over the past two years.  He noted that there are 252 trading days per year.  He then used Matlab (since SDA has money to burn) to compute $D_i = \ln\left(\frac{S_{i+1}}{S_i}\right),$ where $i=1,2,...,503$.  He found that the average of these 503 $D_i$, when multiplied by 252, gave 0.126.   He was about to report this as the (approximate) value of $\mu$ to his boss, but then just as a check, he computed $\Delta_i = \frac{S_{i+1} - S_i}{S_i}$ for $i=1,2,...,503$ and found that the average of the 503 $\Delta_i$, when multiplied by 252, gave 0.178.  He thought about reporting both of these to his boss as (slightly different) approximations for the value for $\mu$, but then thought he might be fired due to the difference between these two numbers being so high.
+
+Emerson became despondent. 
+
+\begin{enumerate}
+
+\item Is there a good solution to Emerson's dilemma with the current data?  If so, what should he report to his boss as the best approximation of $\mu$ from the data?  If not, what additional tests with Matlab should Emerson perform to determine a good approximation for $\mu$?
+
+\item If Emerson determines the standard deviation of his $D_i$ and multiplies that number by $\sqrt{252}$, approximately what number should he get?  If Emerson determines the standard deviation of his $\Delta_i$ and multiplies that number by $\sqrt{252}$, approximately what number should he get?
+
+\end{enumerate}
+
+\underline{Answer:}  
+$$D_i = \ln\left(\frac{S_{i+1}}{S_i}\right) = \ln (S_{i+1}) - \ln (S_i) \approx d(\ln S) = \left(\mu-\frac{\sigma^2}{2}\right)dt + \sigma dB$$
+while
+$$\Delta_i = \frac{S_{i+1} - S_i}{S_i}  \approx \frac{dS}{S} = \mu dt + \sigma dB, $$
+so of course he's getting different averages, since $d\ln S \neq \frac{dS}{S}$.
+
+So the data is just saying that $\mu-\frac{\sigma^2}{2} \approx 0.126$ and  \fbox{$\mu \approx 0.178$}.  This means $\frac{\sigma^2}{2}\approx 0.178-0.126 = 0.052$, so \fbox{$\sigma \approx 0.322$}, which Emerson should (approximately) get by either method in part 2 of the question.  
+
+\underline{Why do I like this problem?:}  Students have a hard time understanding the importance of Ito Calculus, and this gets to the heart of the matter about the difference and why they should care. In normal calculus, $d\ln x = \frac{dx}{x}$. But this doesn't hold in Ito Calculus. You do see these differences in actual stock return data, so it is key that students understand the difference between $d\ln S$ and $\frac{dS}{S}$. Unfortunately, no students really were on top of this problem when I gave it almost a decade ago, which I still find disturbing to this day. Without this, they are just as likely to use one method as the other to determine $\mu$, which will mean they get wrong answers whenever they use $d\ln S$.
+
+
+\item Question (from an Junior/Senior level calculus based probability course): As those of you taking Statistics, the next course in the Probability/Statistics sequence, next quarter will discuss, $\chi _{n}^{2}$ is called a ``chi-squared random variable with $n$ degrees of freedom," which is defined by
+$$\chi _{n}^{2} = (Z_1)^2 + (Z_2)^2 +\ldots+ (Z_n)^2,$$
+where each of the $Z_i$ (for $i=1,2,\ldots,n$) are independent standard normal random variables. Given this, approximate $P(\chi _{200}^{2}>220)$.
+
+\underline{Answer:} Since the $(Z_i)^2$ are independent and identically distributed, we can apply the central limit theorem. To do that we need the expected value and standard deviation of $Z^2$. Since $Z$ is a standard normal, we know that $1=V(Z)=E(Z^2)-(E(Z))^2 = E(Z^2) - 0^2$, so $E(Z^2)=1$.  Similarly, $V(Z^2) = E(Z^4) - (E(Z^2))^2 = E(Z^4) - 1$. From integration by parts we have that 
+$$E(Z^4)= \int_{-\infty}^{\infty} \frac{1}{\sqrt{2\pi}} z^4 e^{-\frac{z^2}{2}}dz = 3 \int_{-\infty}^{\infty} \frac{1}{\sqrt{2\pi}} z^2 e^{-\frac{z^2}{2}} dz= 3E(Z^2) = 3.$$
+Therefore, $V(Z^2)=3-1=2$ and so the standard deviation of $Z^2$ is $\sqrt{2}$. Now we take $P(\chi _{200}^{2}>220)$ and divide both sides of the inequality by 200, then subtract $E(Z^2)=1$ from both sides and then divide by the standard deviation of $Z^2$ over the square root of $n$, which is $\frac{\sqrt{2}}{\sqrt{200}}=0.1$. By the central limit theorem, this means $P(\chi _{200}^{2}>220) \approx P(Z>1)=0.1587.$ 
+
+\underline{Why do I like this problem?:}  This is a great question for a final because it put together so many elements of things they have learned. There's the basic facts about variance and expected value, but also a hard integration by parts method that they learned in the homework much earlier in the class. There is also the use of the Central Limit Theorem, but in a way that is not immediately obvious. It's clearly there but not telegraphed completely. Then there's the fact that they actually don't need a calculator to do this problem. You get $P(Z>1)$ in an easy algebraic way. (They have access to Z tables, so they can quickly read that this corresponds to 0.1587.) Finally, it introduces the chi-squared variable, which is important to see at least a little of if they aren't taking statistics next quarter, and even better to see if they are, so they will understand it better.
+
+\end{enumerate}
+
+\end{document}
+
+
+
