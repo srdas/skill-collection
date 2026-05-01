@@ -98,12 +98,27 @@ researcher/
 ├── analyze_csv.py         # Statistical analysis script
 ├── visualize.py           # Visualization script
 └── skills/
-    └── SKILL.md           # Claude Code skill definition
+    ├── SKILL.md                 # Claude Code skill: research workflow
+    └── SKILL-good-research.md   # Claude Code skill: evaluate research ideas
+```
+
+## Skills
+
+### `/researcher` — Empirical Analysis Workflow
+
+Point the skill at a folder to inventory files, formulate research questions, run analysis, and produce a structured report with visualizations. See [SKILL.md](skills/SKILL.md).
+
+### `/good-research` — Research Idea Evaluation
+
+Evaluate a research idea or question against the **FINER criteria** (Feasible, Interesting, Novel, Ethical, Relevant) and the **ROI framework** (Rigor, Originality, Impact). Returns a structured assessment with actionable recommendations. See [SKILL-good-research.md](skills/SKILL-good-research.md).
+
+```
+/good-research "Does social media usage correlate with anxiety in teenagers aged 13-17?"
 ```
 
 ## Usage
 
-Point the skill at any folder:
+Point the researcher skill at any folder:
 
 ```
 /researcher ~/path/to/folder
