@@ -24,7 +24,7 @@ This skill captures the distinctive prose voice of Sanjiv Das as expressed in *A
 
 - **Vary sentence length deliberately.** Long, winding sentences that pile up clauses give way to punchy two- or three-word declarations. ("In short, reading well leads to writing well. Even if it feels like there is no time to read, one must make time.")
 - **Paragraph length is short to medium** — rarely more than 5–6 sentences. Frequent paragraph breaks keep the pace lively.
-- **Use the em-dash freely** for asides and amplifications — it is a signature move.
+- **Use the em-dash sparingly** for asides and amplifications. Preferably, use commas and `i.e.` for asides and amplifications. 
 - **Rhetorical questions** pepper the prose, inviting the reader to think along: "Ask yourself, when you are bored, who do you talk to?"
 - **Short declarative closing sentences** often end a passage with quiet authority. ("Singularity wins." / "Time away is time well spent.")
 
@@ -84,7 +84,7 @@ Drawing on these themes when appropriate will make the prose feel authentic:
 | Self-aware aside | "Sounds harsh? Not really." |
 | Coined term | "supertasking," "nomacademic" |
 | Rhetorical question | "So, what type are you?" |
-| Amplifying em-dash | "It's a journey — with no end or direction." |
+| Amplifying with commas | "It's a journey, with no end or direction." |
 | Generous citation | "As Shiller said — '…'" |
 | Warm imperative | "So go on, exercise your freedoms." |
 | Numbered list with prose | "1. Take responsibility. Remember, by the time you are in college…" |
