@@ -63,3 +63,10 @@ claude --add-dir /path/to/skill-collection/my-skill
 ## Contributing
 
 To add a new skill, create a subfolder following the structure above. The most important file is `skills/SKILL.md` — start there, then add a `README.md` explaining the skill's origin and intended use.
+
+## Other skill collections
+
+Here, I reference other skills that my be worth a look: 
+
+1. Skills marketplace: https://skillsmp.com/. Check these carefully to make sure they do not include malicious content.
+2. Matt Pocock's skills: https://github.com/mattpocock/skills/tree/main/skills. I use `grill-me` and `teach` herein.
